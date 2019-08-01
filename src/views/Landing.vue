@@ -1,7 +1,10 @@
 <template>
   <div class="landing">
     <h1 class="welcome-design fade-header"> Welcome to the Brewery Library</h1>
-    <p class="welcome-design fade-button">Continue</p>
+    <!-- <p class="welcome-design fade-button">Continue</p> -->
+    <div class="margin">
+        <router-link class="welcome-design fade-button" to="/about">Continue</router-link>
+    </div>
   </div>
 </template>
 
@@ -10,8 +13,6 @@ import { Component, Prop, Vue } from 'vue-property-decorator';
 
 @Component
 export default class Landing extends Vue {
-//   @Prop() private msg!: string;
-//   @Prop() private cnt!: string;
 }
 </script>
 
@@ -50,9 +51,14 @@ export default class Landing extends Vue {
   text-shadow: rgb(241, 217, 119) 1px 0 15px;
 }
 
+.margin {
+    margin-top: 350px;
+}
+
 .fade-button {
   margin-top: 350px;
   font-size: 25px;
+  text-decoration: none;
 
 
   -webkit-animation: fadein 12s;
