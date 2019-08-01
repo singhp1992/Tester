@@ -43,18 +43,29 @@ export default class App extends Vue {}
 }
 
 
- #nav {
+#nav {
   padding: 30px;
+  position: fixed;
+  text-align: center;
+  margin-left: -30px;
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  border-bottom: 2px solid black;
+  z-index: 10;
 } 
 
 a {
   font-weight: bold;
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 a:visited  {
-  color: black;
+  color: white;
 }
 
 #nav a.router-link-exact-active {

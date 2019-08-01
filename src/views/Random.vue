@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="random">
     <Title msg="Random Brewery"/>
   </div>
 </template>
@@ -15,3 +15,10 @@ import Title from '@/components/Title.vue'; // @ is an alias to /src
 })
 export default class Home extends Vue {}
 </script>
+
+<style>
+
+.random {
+  margin-top: 100px;
+}
+</style>
