@@ -7,6 +7,10 @@
     </div>
     <router-view/>
     <div id="footer">
+      <router-link to="/home">Home</router-link> |
+      <router-link to="/categories">Categories</router-link> | 
+      <router-link to="/random">Random</router-link> |
+      <router-link to="/github" target="_blank">Preeti Singh</router-link>
     </div>
   </div>
 </template>
@@ -43,17 +47,36 @@ export default class App extends Vue {}
   padding: 30px;
 } 
 
-#nav a {
+a {
   font-weight: bold;
   text-decoration: none;
+  color: black;
 }
 
-#nav a:visited  {
+a:visited  {
   color: black;
 }
 
 #nav a.router-link-exact-active {
   color: goldenrod
 } 
+
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  z-index: 10;
+  height: 5%;
+  padding-top: 10px;
+  border-top: 2px solid black;
+}
+
+#footer a {
+  color: goldenrod;
+}
 
 </style>
