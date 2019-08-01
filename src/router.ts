@@ -18,10 +18,7 @@ export default new Router({
     {
       path: '/categories',
       name: 'categories',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/Categories.vue'),
+      component: () => import('./views/Categories.vue'),
     },
     {
       path: '/random',
