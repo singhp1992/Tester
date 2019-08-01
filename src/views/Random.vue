@@ -1,6 +1,7 @@
 <template>
   <div class="random">
-    <Title msg="Random Brewery"/>
+    <h1>Random</h1>
+    <!-- <Title msg="Random Brewery"/> -->
   </div>
 </template>
 

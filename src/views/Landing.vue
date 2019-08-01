@@ -1,9 +1,9 @@
 <template>
   <div class="landing">
     <h1 class="welcome-design fade-header"> Welcome to the Brewery Library</h1>
-    <div class="margin">
+    <!-- <div class="margin">
         <router-link class="welcome-design fade-button" to="/home">Continue</router-link>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -50,9 +50,9 @@ export default class Landing extends Vue {
   text-shadow: rgb(241, 217, 119) 1px 0 15px;
 }
 
-.margin {
+/* .margin {
     margin-top: 350px;
-}
+} */
 
 .fade-button {
   margin-top: 350px;

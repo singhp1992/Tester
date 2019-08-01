@@ -11,6 +11,11 @@ export default new Router({
       component: () => import('./views/Landing.vue'),
     },
     {
+      path: '/welcome',
+      name: 'landing',
+      component: () => import('./views/Landing.vue'),
+    },
+    {
       path: '/home',
       name: 'home',
       component: () => import('./views/Home.vue'),
