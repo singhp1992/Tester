@@ -6,6 +6,8 @@
       <router-link to="/random">Random</router-link>
     </div>
     <router-view/>
+    <div id="footer">
+    </div>
   </div>
 </template>
 
