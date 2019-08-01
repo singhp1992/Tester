@@ -56,7 +56,7 @@ export default class App extends Vue {}
   color: white;
   border-bottom: 2px solid black;
   z-index: 10;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
 } 
 
 a {
@@ -85,6 +85,7 @@ a:visited  {
   height: 5%;
   padding-top: 10px;
   border-top: 2px solid black;
+  box-shadow: 0 -5px 16px 0px rgba(0,0,0,0.3);
 }
 
 #footer a {
