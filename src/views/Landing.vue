@@ -1,7 +1,7 @@
 <template>
   <div class="landing">
-    <h1 class="welcome-design fade-header"> {{ msg }}</h1>
-    <p class="welcome-design fade-button"> {{ cnt }}</p>
+    <h1 class="welcome-design fade-header"> Welcome to the Brewery Library</h1>
+    <p class="welcome-design fade-button">Continue</p>
   </div>
 </template>
 
@@ -10,8 +10,8 @@ import { Component, Prop, Vue } from 'vue-property-decorator';
 
 @Component
 export default class Landing extends Vue {
-  @Prop() private msg!: string;
-  @Prop() private cnt!: string;
+//   @Prop() private msg!: string;
+//   @Prop() private cnt!: string;
 }
 </script>
 
