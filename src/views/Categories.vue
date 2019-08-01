@@ -1,5 +1,6 @@
 <template>
   <div class="categories">
+    <!-- Remove H1 when needed -->
     <h1>Categories</h1>
   </div>
 </template>
@@ -21,4 +22,5 @@ export default class Categories extends Vue {}
 .categories {
   margin-top: 100px;
 }
+
 </style>

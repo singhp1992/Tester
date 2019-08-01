@@ -1,10 +1,6 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/home">Home</router-link> |
-      <router-link to="/categories">Categories</router-link> | 
-      <router-link to="/random">Random</router-link>
-    </div>
+    <Nav />
     <router-view/>
     <div id="footer">
       <router-link to="/home">Home</router-link> |
@@ -20,11 +16,13 @@
 import VueRouter, { RouteConfig } from 'vue-router';
 import { Component, Vue } from 'vue-property-decorator';
 import Landing from './views/Landing.vue';
+import Nav from './views/Nav.vue';
 
 
 @Component({
   components: {
     Landing,
+    Nav,
   },
 })
 
@@ -35,43 +33,12 @@ export default class App extends Vue {}
 <style>
 
 #app {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto Mono', monospace, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: black;
 }
-
-
-#nav {
-  padding: 30px;
-  position: fixed;
-  text-align: center;
-  margin-left: -30px;
-  left: 0;
-  top: 0;
-  right: 0;
-  width: 100%;
-  background-color: black;
-  color: white;
-  border-bottom: 2px solid black;
-  z-index: 10;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
-} 
-
-a {
-  font-weight: bold;
-  text-decoration: none;
-  color: white;
-}
-
-a:visited  {
-  color: white;
-}
-
-#nav a.router-link-exact-active {
-  color: goldenrod
-} 
 
 #footer {
   position: fixed;
@@ -93,3 +60,9 @@ a:visited  {
 }
 
 </style>
+
+    <!-- <div id="nav">
+      <router-link to="/home">Home</router-link> |
+      <router-link to="/categories">Categories</router-link> | 
+      <router-link to="/random">Random</router-link>
+    </div> -->
