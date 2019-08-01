@@ -25,5 +25,9 @@ export default new Router({
       name: 'random',
       component: () => import('./views/Random.vue'),
     },
+    {
+      path: '/github',
+      beforeEnter() { location.href = 'https://github.com/singhp1992' }
+    }
   ],
 });
