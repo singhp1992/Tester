@@ -1,7 +1,6 @@
 <template>
   <div class="landing">
     <h1 class="welcome-design fade-header"> Welcome to the Brewery Library</h1>
-    <!-- <p class="welcome-design fade-button">Continue</p> -->
     <div class="margin">
         <router-link class="welcome-design fade-button" to="/home">Continue</router-link>
     </div>
