@@ -16,5 +16,9 @@ import Title from '@/components/Title.vue'; // @ is an alias to /src
 export default class Categories extends Vue {}
 </script>
 
-<style lang="css">
+<style>
+
+.categories {
+  margin-top: 100px;
+}
 </style>
